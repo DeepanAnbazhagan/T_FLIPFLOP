@@ -27,8 +27,8 @@ module tff ( input clk, input rstn, input t, output reg q);
       q <= 0;  
     else  
         if (t)  
-                            // Write the logic for T Flip Flop
+            q <= ~q;
         else  
-              
+         q <= q;     
   end  
 endmodule  
